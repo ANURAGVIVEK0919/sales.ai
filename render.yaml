@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: sales-ai-backend
+    runtime: python
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.0
+      - key: GEMINI_MODEL
+        value: gemini-3.5-flash-lite
+      - key: DATABRICKS_SERVER_HOSTNAME
+        sync: false
+      - key: DATABRICKS_HTTP_PATH
+        sync: false
+      - key: DATABRICKS_TOKEN
+        sync: false
+      - key: DATABRICKS_HOST
+        sync: false
+      - key: DATABRICKS_JOB_ID
+        sync: false
+      - key: DATABRICKS_VOLUME_INCOMING_PATH
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: ALLOWED_ORIGINS
+        sync: false
