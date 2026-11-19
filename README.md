@@ -7,7 +7,6 @@
 [![Databricks](https://img.shields.io/badge/Databricks-Unity%20Catalog-FF3621.svg?logo=databricks&logoColor=white)](https://databricks.com)
 [![Google Gemini](https://img.shields.io/badge/GenAI-Google%20Gemini-8E75C2.svg?logo=google&logoColor=white)](https://aistudio.google.com)
 [![LightGBM](https://img.shields.io/badge/ML-LightGBM-brightgreen.svg)](https://lightgbm.readthedocs.io)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 An enterprise-grade, full-stack retail intelligence platform that unifies cloud lakehouse data pipelines, gradient-boosted time-series forecasting, and large language model (LLM) decision support. The platform couples a 7-stage Databricks Medallion architecture with a high-performance FastAPI microservice and an interactive React 19 executive dashboard.
 
@@ -32,7 +31,6 @@ An enterprise-grade, full-stack retail intelligence platform that unifies cloud 
 15. [Production Deployment Guide](#production-deployment-guide)
 16. [Testing Instructions](#testing-instructions)
 17. [Future Roadmap](#future-roadmap)
-18. [License](#license)
 
 ---
 
@@ -559,8 +557,3 @@ npm run build
 - [ ] **Real-Time Streaming:** Integrate Databricks Delta Live Tables (DLT) with streaming Kafka / Event Hub ingestion.
 - [ ] **Automated Alerts:** Slack/Email webhook notifications when a product's demand volatility exceeds 25%.
 
----
-
-## License
-
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
